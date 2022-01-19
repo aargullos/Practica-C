@@ -6,40 +6,40 @@ var
     char lletra;
 endvar
 
-print("\n***********MENU*************");
+WRITE("\n***********MENU*************");
     do{
-        print("\n      1/ FACIL            *");
-        print("\n      2/ REGULAR          *");
-        print("\n      3/ DIFICIL          *");
-        print("\n      4/ EXIT             *");
-    print("\n****************************\n");
-    print("Selecciona la dificultat:\n");
-        read("%d",&num);
+        WRITE("\n      1/ FACIL            *");
+        WRITE("\n      2/ REGULAR          *");
+        WRITE("\n      3/ DIFICIL          *");
+        WRITE("\n      4/ EXIT             *");
+    WRITE("\n****************************\n");
+    WRITE("Selecciona la dificultat:\n");
+        READ("%d",&num);
     }while(num < 1 OR num > 4);
 
 switch (num){
         
         case 1: print("Has escollit el mode mes facil\n");
-            print(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
-            for(i=0;i < ROW; i+1=i){
-                for(j=0; j < COLS;j+1=j){
+            WRITE(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
+            for(i to ROW){
+                for(j to COLS){
                     tauler[i][j]= 0;
                     if (j != 0){
-                        print("{%d}",tauler[i][j]);
+                        WRITE("{%d}",tauler[i][j]);
                     }else{
-                        print("%d ",x);
+                        WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
                     
-                    printf("\n");
+                    WRITE("\n");
                     
                 }
                 x = 0;
-                print("Quina fila vols seleccionar?\n");
-                read(pos2);
-                print("Quina columna vols seleccionar?\n");
-                read("%s",&lletra);
+                WRITE("Quina fila vols seleccionar?\n");
+                READ(pos2);
+                WRITE("Quina columna vols seleccionar?\n");
+                READ("%s",&lletra);
                 
                 switch(lletra){
                     case 'A': pos1 = 1;
@@ -63,23 +63,23 @@ switch (num){
                     case 'J': pos1 = 10;
                     break;
                 }
-                print("\n");
+                WRITE("\n");
                 tauler[pos2][pos1] = 1;
-                print("  [A][B][C][D][E][F][G][H][I][J]  \n");
+                WRITE("  [A][B][C][D][E][F][G][H][I][J]  \n");
                 for(i=0;i < ROW; i+1=i{
                     for(j=0; j < COLS;j+1=){
                         if (j != 0){
-                            print("{%d}",tauler[i][j]);
+                            WRITE("{%d}",tauler[i][j]);
                         }else{
-                            printf("%d ",x);
+                            WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
-                    printf("\n");
+                    WRITE("\n");
                 }
                if (tauler[4][3] != 0 ){
 		              
-                    printf("Felicitats has guanyat");
+                    WRITE("Felicitats has guanyat");
                 }elseif(tauler[8][8] != 0){
                         printf("Felicitats has guanyat");
                 } elseif(tauler[5][4] != 0){
@@ -93,30 +93,30 @@ switch (num){
                 } elseif(tauler[3][6] != 0){
                         printf("Felicitats has guanyat");
                 }else {
-                    printf("Has fallat");
+                    WRITE("Has fallat");
                 }
         break;
 case 2: print("Has escollit el segon mode\n");
-        print(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
-            for(i=0;i < ROW; i+1=i){
-                for(j=0; j < COLS;j+1=j){
+       WRITE(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
+            for(i to ROW){
+                for(j to COLS){
                     tauler[i][j]= 0;
                     if (j != 0){
-                        print("{%d}",tauler[i][j]);
+                        WRITE("{%d}",tauler[i][j]);
                     }else{
-                        print("%d ",x);
+                        WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
                     
-                    printf("\n");
+                    WRITE("\n");
                     
                 }
                 x = 0;
-                print("Quina fila vols seleccionar?\n");
-                read(pos2);
-                print("Quina columna vols seleccionar?\n");
-                read("%s",&lletra);
+                WRITE("Quina fila vols seleccionar?\n");
+                READ(pos2);
+                WRITE("Quina columna vols seleccionar?\n");
+                READ("%s",&lletra);
                 
                 switch(lletra){
                     case 'A': pos1 = 1;
@@ -140,23 +140,23 @@ case 2: print("Has escollit el segon mode\n");
                     case 'J': pos1 = 10;
                     break;
                 }
-                print("\n");
+                WRITE("\n");
                 tauler[pos2][pos1] = 1;
-                print("  [A][B][C][D][E][F][G][H][I][J]  \n");
+                WRITE("  [A][B][C][D][E][F][G][H][I][J]  \n");
                 for(i=0;i < ROW; i+1=i{
                     for(j=0; j < COLS;j+1=){
                         if (j != 0){
-                            print("{%d}",tauler[i][j]);
+                            WRITE("{%d}",tauler[i][j]);
                         }else{
-                            printf("%d ",x);
+                            WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
-                    printf("\n");
+                    WRITE("\n");
                 }
                if (tauler[4][3] != 0 ){
 		              
-                    printf("Felicitats has guanyat");
+                    WRITE("Felicitats has guanyat");
                 }elseif(tauler[8][8] != 0){
                         printf("Felicitats has guanyat");
                 } elseif(tauler[5][4] != 0){
@@ -170,31 +170,31 @@ case 2: print("Has escollit el segon mode\n");
                 } elseif(tauler[3][6] != 0){
                         printf("Felicitats has guanyat");
                 }else {
-                    printf("Has fallat");
+                    WRITE("Has fallat");
                 }
         break;
 
         case 3: print("Has escollit el mode mes dificil, estas segur?");
-        print(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
-            for(i=0;i < ROW; i+1=i){
-                for(j=0; j < COLS;j+1=j){
+       WRITE(" \n  [A][B][C][D][E][F][G][H][I][J]  \n");
+            for(i to ROW){
+                for(j to COLS){
                     tauler[i][j]= 0;
                     if (j != 0){
-                        print("{%d}",tauler[i][j]);
+                        WRITE("{%d}",tauler[i][j]);
                     }else{
-                        print("%d ",x);
+                        WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
                     
-                    printf("\n");
+                    WRITE("\n");
                     
                 }
                 x = 0;
-                print("Quina fila vols seleccionar?\n");
-                read(pos2);
-                print("Quina columna vols seleccionar?\n");
-                read("%s",&lletra);
+                WRITE("Quina fila vols seleccionar?\n");
+                READ(pos2);
+                WRITE("Quina columna vols seleccionar?\n");
+                READ("%s",&lletra);
                 
                 switch(lletra){
                     case 'A': pos1 = 1;
@@ -218,23 +218,23 @@ case 2: print("Has escollit el segon mode\n");
                     case 'J': pos1 = 10;
                     break;
                 }
-                print("\n");
+                WRITE("\n");
                 tauler[pos2][pos1] = 1;
-                print("  [A][B][C][D][E][F][G][H][I][J]  \n");
+                WRITE("  [A][B][C][D][E][F][G][H][I][J]  \n");
                 for(i=0;i < ROW; i+1=i{
                     for(j=0; j < COLS;j+1=){
                         if (j != 0){
-                            print("{%d}",tauler[i][j]);
+                            WRITE("{%d}",tauler[i][j]);
                         }else{
-                            printf("%d ",x);
+                            WRITE("%d ",x);
                             x = x + 1;
                         }
                     }
-                    printf("\n");
+                    WRITE("\n");
                 }
                if (tauler[4][3] != 0 ){
 		              
-                    printf("Felicitats has guanyat");
+                    WRITE("Felicitats has guanyat");
                 }elseif(tauler[8][8] != 0){
                         printf("Felicitats has guanyat");
                 } elseif(tauler[5][4] != 0){
@@ -248,11 +248,12 @@ case 2: print("Has escollit el segon mode\n");
                 } elseif(tauler[3][6] != 0){
                         printf("Felicitats has guanyat");
                 }else {
-                    printf("Has fallat");
+                    WRITE("Has fallat");
                 }
         break;
 
-        case 4: print("Has escollit sortir");
+        case 4: WRITE("Has escollit sortir");
     }
 }
 endfunction
+
